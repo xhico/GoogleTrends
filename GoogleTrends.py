@@ -4,7 +4,6 @@
 import plotly.express as px
 from pytrends.request import TrendReq
 
-
 if __name__ == '__main__':
     print("Crypto Google Trends")
 
@@ -21,5 +20,5 @@ if __name__ == '__main__':
     data = data.reset_index()
 
     fig = px.line(data, x="date", y=[
-                  'machine learning'], title='Keyword Web Search Interest Over Time')
+        'machine learning'], title='Keyword Web Search Interest Over Time')
     fig.show()
